@@ -1,0 +1,49 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 40px;
+  background-color: #f8f8fa;
+}
+
+nav{
+  padding: 10px 0px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+#hambuger-menu{
+  display: none;
+}
+
+h1{
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+h1:hover{
+  opacity: 0.5;
+}
+
+h1:active{
+  opacity: 1;
+}
+
+.menu-item{
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+  transition: opacity 0.15s;
+}
+
+.menu-item:hover{
+  opacity: 0.5;
+}
+
+.menu-item:active{
+  opacity: 1;
+}

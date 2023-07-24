@@ -1,0 +1,87 @@
+@media only screen and (max-width: 500px) {
+
+/*Header*/
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+
+  nav{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #hambuger-menu{
+    display: block;
+    border: 0px;
+    background: url(../img/ham-menu.svg) no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.15;
+  }
+
+  #hambuger-menu:hover{
+    opacity: 0.5;
+  }
+
+  #hambuger-menu:active{
+    opacity: 1;
+  }
+
+  #hambuger-menu:hover + nav,
+  #hambuger-menu:active + nav,
+  header:hover nav{
+    position: absolute;
+    right: 1px;
+    top: 85px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(248,248,250,0.5), rgba(248,248,250,0.5));
+    display: block;
+    text-align: center;
+  }
+
+  .menu-item{
+      display: block;
+      margin: 20px 0px;
+  }
+
+
+  /*Main*/
+
+  h2{
+    margin: 20px 0px 10px 0px;
+  }
+
+  main{
+    padding: 25px 20px;
+    background-size: 250px;
+  }
+
+  #bio{
+    display: block;
+  }
+
+  #avatar{
+    width: 400px;
+    height: 400px;
+    border-radius: 250px;
+  }
+
+  #port .main-text, .main-text{
+    width: 400px;
+    margin-bottom: 50px;
+  }
+
+
+  /*Footer*/
+
+  footer{
+    padding: 25px 20px;
+  }
+
+
+}

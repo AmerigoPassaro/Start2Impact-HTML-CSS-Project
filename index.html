@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Start2Impact HTML CSS Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-  <h1>Start2Impact HTML CSS Project</h1>
-  <p>ciao ciao ciao</p>
+
+    <header>
+      <h1><b>My</b>Profile</h1>
+      <input type="button" id="hambuger-menu">
+      <nav>
+        <ul id="menu">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section>
+        <h2>
+          <b>Bio</b>graphy
+        </h2>
+        <article id="bio">
+          <figure>
+            <img id="avatar" src="assets/img/avatar.jpg">
+            <p id="social">
+              <a href="https://www.instagram.com/amerigo_passaro/"><img class="social-icon" src="assets/img/social/ig.svg"></a>
+              <a href="https://www.linkedin.com/in/amerigo-passaro-280162152/"><img class="social-icon" src="assets/img/social/in.svg"></a>
+              <a href="https://github.com/AmerigoPassaro"><img class="social-icon" src="assets/img/social/git.svg"></a>
+            </p>
+          </figure>
+          <div>
+            <p class="main-question">
+              Chi sono?
+            </p>
+            <p class="main-text">
+              Mi presento, sono <strong>Amerigo</strong> e sono un <strong>Graphic Deisgner</strong> e un <strong>Frontend Developer</strong>.<br>
+              Nato a <strong>Caltanissetta</strong>, una piccola città dell'entroterra siciliano, ho conseguito il diploma presso l'ITC "Mario Rapisardi" nell'anno 2013.<br>
+              Dopo una lunga esperienza come graphic designer all'interno di un'azienda locale, ho deciso di focalizzarmi su una mia vecchia passio, lo sviluppo web.<br>
+              Per questo ho intrapreso nel 2022 il percorso di sviluppo frontend presso <strong>Start2Impact</strong> e il percorso di ingegneria informatica presso l'università telematica <strong>Universitas Mercatorum</strong>.<br>
+            </p>
+
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>
+          Development<b>Skills</b>
+        </h2>
+        <article id="skill">
+          <p class="main-question">
+            Cosa so fare?
+          </p>
+          <p>
+            Ecco una lista delle mie skill relative allo sviluppo web:
+            <ul id="skill-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">React</li>
+            </ul>
+          </p>
+        </article>
+      </section>
+
+      <section id="section-port">
+        <h2>
+          Personal<b>Portfolio</b>
+        </h2>
+        <article id="port">
+          <p class="main-question">
+            Vi mostro qualcosa?
+          </p>
+          <p class="main-text">
+            Per avere una dimostrazione delle mie capacità, metterò sotto esame lo stesso progetto su cui siamo navigando!<br>
+            L'intera struttura <strong>HTML</strong> è ben strutturata secondo i moderni utilizzi degli elementi sematici, i quali agevolano la navogazione per gli screen reader.<br>
+            L'introduzione di metatag che agevolano l'indicizzazione della pagina, rendono lo stesso sito web performante nel circuito dei motori di ricerca.<br>
+            Il layout è gestito da più fogli di stile in <strong>CSS</strong>, i quali sono suddivisi per ogni sezione della pagina, così da rendere più agevole la consulatazione da parte di sviluppatori esterni.<br>
+            Inoltre è presenta la più che comoda tecnologia di layout responsive, che si adatta al formato desktop e mobile.<br>
+            Ma per poter visionare il tutto, ecco un collegamento rapido al progetto su <strong>GitHub</strong>.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer>
+      <h3>Amerigo Passaro &copy</h3>
+    </footer>
+
   </body>
 </html>
