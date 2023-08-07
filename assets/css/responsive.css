@@ -66,14 +66,18 @@
   }
 
   #avatar{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 250px;
   }
 
   #port .main-text, .main-text{
     width: 400px;
     margin-bottom: 50px;
+  }
+
+  .main-text, #port .main-text, h1{
+    width: 350px;
   }
 
 
