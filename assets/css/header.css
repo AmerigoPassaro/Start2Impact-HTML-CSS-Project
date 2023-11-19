@@ -44,3 +44,10 @@ nav{
 .menu-item:active{
   opacity: 1;
 }
+
+.menu-item button{
+  display: inline;
+  border: inherit;
+  font-size: inherit;
+  background: inherit;
+}

@@ -3,17 +3,17 @@
 
   <head>
 
-    <title>Start2Impact HTML CSS Project</title>
+    <title>Amerigo Passaro Website v.1.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Primo progetto del master Front End Development il cui contenuto è Biografia, Principali skill di sviluppo web e Portfolio dello sviluppatore Amerigo Passaro">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <meta name="description" content="Primo sito web in Front End Development il cui contenuto &egrave; Biografia, Principali skill di sviluppo web e Portfolio dello sviluppatore Amerigo Passaro">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- Meta tag Open Graph -->
-    <meta property="og:title" content="Start2Impact HTML CSS Project Homepage">
-    <meta property="og:url" content="https://amerigopassaro.github.io/Start2Impact-HTML-CSS-Project/">
-    <meta property="og:image" content="https://amerigopassaro.github.io/Start2Impact-HTML-CSS-Project/assets/img/og-cover.jpg">
+    <meta property="og:title" content="Amerigo Passaro Website Homepage">
+    <meta property="og:url" content="https://www.amerigopassaro.it/index.html">
+    <meta property="og:image" content="assets/img/og-cover.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Primo progetto del master Front End Development il cui contenuto è Biografia, Principali skill di sviluppo web e Portfolio dello sviluppatore Amerigo Passaro">
+    <meta property="og:description" content="Primo sito web in Front End Development il cui contenuto &egrave; Biografia, Principali skill di sviluppo web e Portfolio dello sviluppatore Amerigo Passaro">
     <meta property="og:locale" content="it_IT">
 
     <!-- Link tag Fogli di stile -->
@@ -31,20 +31,8 @@
 
   <body>
 
-    <header>
-      <div id="site-brand"><b>My</b>Profile</div>
-      <input type="button" id="hambuger-menu">
-      <nav>
-        <ul id="menu">
-          <li class="menu-item"><a href="index.html">Home</a></li>
-          <li class="menu-item"><a href="contacts.html">Contacts</a></li>
-        </ul>
-      </nav>
-
-    </header>
-
-    <main>
-      <h1>Presentazione: Amerigo Passaro Frontend Developer alle prime armi...</h1>
+    <!-- <main>
+      <h1>Presentazione : Amerigo Passaro Frontend Developer alle prime armi...</h1>
       <section>
         <h2>
           <b>Bio</b>graphy
@@ -64,9 +52,9 @@
             </p>
             <p class="main-text">
               Mi presento, sono <strong>Amerigo</strong> e sono un <strong>Graphic Deisgner</strong> e un <strong>Frontend Developer</strong>.<br>
-              Nato a <strong>Caltanissetta</strong>, una piccola città dell'entroterra siciliano, ho conseguito il diploma presso l'ITC "Mario Rapisardi" nell'anno 2013.<br>
+              Nato a <strong>Caltanissetta</strong>, una piccola citt&agrave; dell'entroterra siciliano, ho conseguito il diploma presso l'ITC "Mario Rapisardi" nell'anno 2013.<br>
               Dopo una lunga esperienza come graphic designer all'interno di un'azienda locale, ho deciso di focalizzarmi su una mia vecchia passio, lo sviluppo web.<br>
-              Per questo ho intrapreso nel 2022 il percorso di sviluppo frontend presso <strong>Start2Impact</strong> e il percorso di ingegneria informatica presso l'università telematica <strong>Universitas Mercatorum</strong>.<br>
+              Per questo ho intrapreso nel 2022 il percorso di sviluppo frontend presso <strong>Start2Impact</strong> e il percorso di ingegneria informatica presso l'universit&agrave; telematica <strong>Universitas Mercatorum</strong>.<br>
             </p>
 
           </div>
@@ -102,20 +90,79 @@
             Vi mostro qualcosa?
           </p>
           <p class="main-text">
-            Per avere una dimostrazione delle mie capacità, metterò sotto esame lo stesso progetto su cui siamo navigando!<br>
-            L'intera struttura <strong>HTML</strong> è ben strutturata secondo i moderni utilizzi degli elementi sematici, i quali agevolano la navogazione per gli screen reader.<br>
-            Il layout è gestito da più fogli di stile in <strong>CSS</strong>, i quali sono suddivisi per ogni sezione della pagina, così da rendere più agevole la consulatazione da parte di sviluppatori esterni.<br>
-            Inoltre è presenta la più che comoda tecnologia di layout responsive, che si adatta al formato desktop e mobile.<br>
-            Ma per poter visionare il tutto, ecco un collegamento rapido al progetto su <strong><a href="https://amerigopassaro.github.io/Start2Impact-HTML-CSS-Project/">GitHub</a></strong>.
+            Dopo essermi presentato ed avervi detto cosa so fare, ecco qualche dimostrazione.<br>
+
+            <div id="projects-container">
+
+              <div class="project-box">
+                <h3>AmerigoPassaro</h3>
+                <h4>My personal website</h4>
+                <img class="project-picutre" src="assets/img/projects/amerigopassaro.jpg">
+                <p class="project-description">
+                  Quello su cui state navigando &egrave; il mio primo progetto presente sul mio portfolio.<br>
+                  Esso contiene tutte le informazioni su di me e sui miei lavori.<br>
+                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
+                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-HTML-CSS-Project">Repository GitHub</a>
+                  <a class="project-link" href="https://www.amerigopassaro.it/">Link al progetto</a>
+                </p>
+              </div>
+
+              <div class="project-box">
+                <h3>MyCounter</h3>
+                <h4>A simple counter</h4>
+                <img class="project-picutre" src="assets/img/projects/mycounter.jpg">
+                <p class="project-description">
+                  Lavorando con le basi del JavaScript ho prodotto questo nuovo progetto, sullo stesso stile del primo.<br>
+                  Esso si fonda sulla semplice struttura di un contatore.<br>
+                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
+                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-Basic-Javascript-Project">Repository GitHub</a>
+                  <a class="project-link" href="https://www.amerigopassaro.it/projects/mycounter/">Link al progetto</a>
+                </p>
+              </div>
+
+              <div class="project-box">
+                <h3>Library</h3>
+                <h4>What you want to read</h4>
+                <img class="project-picutre" src="assets/img/projects/library.jpg">
+                <p class="project-description">
+                  Con un JavaScript pi&ugrave; complesso, ho prodotto questo secondo progetto assai interessante.<br>
+                  Un modo per ottenere di consigli alla lettura, inserendo solo il genere.<br>
+                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
+                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-Advanced-Javascript-Project">Repository GitHub</a>
+                  <a class="project-link" href="https://www.amerigopassaro.it/projects/library/">Link al progetto</a>
+                </p>
+              </div>
+
+              <div class="project-box">
+                <h3>Meditation Time</h3>
+                <h4>The time for you</h4>
+                <img class="project-picutre" src="assets/img/projects/meditationtime.jpg">
+                <p class="project-description">
+                  Tramite l'utilizzo della liberia React, mi sono dilettato nella produzione di un timer.<br>
+                  Tutti abbiamo bisogno di un po' di tempo per noi stessi e per meditare.<br>
+                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
+                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-React-Project">Repository GitHub</a>
+                  <a class="project-link" href="https://amerigopassaro.github.io/Start2Impact-React-Project/">Link al progetto</a>
+                </p>
+              </div>
+
+
+            </div>
+
+            Per avere un'idea pi&ugrave; chiara sui miei progetti, &egrave; giusto che vi esponga alcune delle componenti comuni tra tutti questi.<br>
+            L'intera struttura <strong>HTML</strong> &egrave; ben strutturata secondo i moderni utilizzi degli elementi sematici, i quali agevolano la navogazione per gli screen reader.<br>
+            Il layout &egrave; gestito da pi&ugrave; fogli di stile in <strong>CSS</strong>, i quali sono suddivisi per ogni sezione della pagina, cos&igrave; da rendere pi&ugrave; agevole la consulatazione da parte di sviluppatori esterni.<br>
+            Inoltre &egrave; presenta la pi&ugrave; che comoda tecnologia di layout <strgon>responsive</strong>, che si adatta al formato desktop e mobile.<br>
+            Per ultimo, ma non per importanza, vorrei evidenziare l'utilizzo di <strong>meta tag</strong> utili per una buona indicizzazione, l'utilizzo dei tag <strong>Open Graph</strong> per una migliore interfaccia con i social newtowrk.
           </p>
         </article>
       </section>
 
-    </main>
-
-    <footer>
-      <h3>Amerigo Passaro &copy</h3>
-    </footer>
+    </main> -->
 
   </body>
-</html>
+  <script src="assets/js/components/header.js"></script>
+  <script src="assets/js/components/main.js"></script>
+  <script src="assets/js/components/section.js"></script>
+  <script src="assets/js/components/footer.js"></script>
+  </html>

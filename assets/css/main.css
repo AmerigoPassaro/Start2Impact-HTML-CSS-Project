@@ -1,4 +1,5 @@
 main{
+  min-height: 700px;
   padding: 20px 40px;
   background-color: #e5e6eb;
   background-image: url('../img/bg.png');
@@ -78,7 +79,7 @@ h2{
   padding: 0px;
 }
 
-#contact-submit, .skill-item{
+#contact-submit, .skill-item, .project-link{
   display: inline-block;
   margin: 40px 20px 40px 0px;
   padding: 20px 30px;
@@ -92,12 +93,17 @@ h2{
   cursor: pointer;
 }
 
-#contact-submit:hover, .skill-item:hover{
+.project-link{
+  margin: 15px 0px;
+  background-color: #e5e6eb;
+}
+
+#contact-submit:hover, .skill-item:hover, .project-link:hover{
   opacity: 0.5;
   font-weight: 700;
 }
 
-#contact-submit:active, .skill-item:active{
+#contact-submit:active, .skill-item:active, .project-link:active{
   opacity: 1;
   font-weight: 400;
 }
@@ -126,4 +132,28 @@ textarea.contacts-input{
   display: block;
   margin: 20px 20px 40px 0px;
   border: 0px;
+}
+
+/* Portfolio */
+
+#projects-container{
+  display: grid;
+  grid-template-columns: 475px 475px 475px;
+}
+
+.project-box{
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  background-color: #c0c2ce;
+}
+
+.project-picutre{
+  margin: 20px 0px;
+  width: 350px;
+}
+
+.project-description{
+  width: 300px;
 }

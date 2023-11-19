@@ -1,0 +1,13 @@
+*{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 40px;
+  background-color: #779484;
+}

@@ -1,0 +1,83 @@
+main{
+  padding: 20px 40px;
+  background-color: #fff0c2;
+  background-image: url('../img/bg.png');
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+/*Text Section*/
+
+h2{
+  margin: 10px 0px 30px 0px;
+  font-size: 27px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.main-question{
+  color: #779484;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.main-text{
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  width: 990px;
+}
+
+
+/*Counter*/
+
+.container{
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  margin-top: 80px;
+
+}
+
+.screen{
+  width: auto;
+  min-width: 820px;
+  height: 300px;
+  margin-right: 50px;
+  padding: 0px 50px;
+  border-radius: 50px;
+  font-size: 150px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  background-color: #db9a1e;
+  transition: opacity 0.15s;
+}
+
+.number-containers{
+  position: relative;
+  top: 65px;
+}
+
+.button-command{
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #db9a1e;
+  transition: opacity 0.15s;
+}
+
+
+.button-command:hover, .screen:hover{
+  opacity: 0.5;
+}
+
+.button-command:active, .screen:active{
+  opacity: 1;
+}
