@@ -1,3 +1,4 @@
+// Liste di elementi
 let skills = ["html", "css", "javascript", "react"];
 
 // Avvio creazione
