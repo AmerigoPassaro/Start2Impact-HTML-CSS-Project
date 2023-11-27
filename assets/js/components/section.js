@@ -15,7 +15,7 @@ function section(){
         // Inserimento attributi
         section.setAttribute("id", `${sections[i]}`);
         titleS.innerHTML = sections[i];
-        textS.setAttribute("id", `continaer-${sections[i]}`);
+        textS.setAttribute("id", `container-${sections[i]}`);
         question.setAttribute("class", "main-question");
         // Inserimento valori
         question.innerHTML = questions[i];
@@ -23,7 +23,7 @@ function section(){
         document.querySelector("main").append(section);
         document.querySelector(`#${sections[i]}`).prepend(titleS);
         document.querySelector(`#${sections[i]}`).querySelector("h2").after(textS);
-        document.querySelector(`#continaer-${sections[i]}`).append(question);
+        document.querySelector(`#container-${sections[i]}`).append(question);
     }
 
 }
