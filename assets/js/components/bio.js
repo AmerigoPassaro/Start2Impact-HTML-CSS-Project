@@ -4,23 +4,17 @@ Dopo una lunga esperienza come graphic designer all'interno di un'azienda locale
 Per questo ho intrapreso nel 2022 il percorso di sviluppo frontend presso <strong>Start2Impact</strong> e il percorso di ingegneria informatica presso l'universit&agrave; telematica <strong>Universitas Mercatorum</strong>.<br>`
 
 // Avvio creazione
-document.addEventListener("DOMContentLoaded", bioText);
+document.addEventListener("DOMContentLoaded", bio);
 
-function bioText(){
+function bio(){
 
     // Creazione avatar
-    let container = document.createElement("div");
-    let question = document.createElement("p");
-    let bioText = document.createElement("p");
+    let bio = document.createElement("p");
     // Inserimento attributo
-    container.setAttribute("id", "container-biotiext")
-    question.setAttribute("class", "main-question");
-    bioText.setAttribute("class", "main-text");
+    bio.setAttribute("class", "main-text");
     // Inserimento contneuto
-    question.innerHTML = "Chi sono?";
-    bioText.innerHTML = textBio
+    bio.innerHTML = textBio;
     // Inserimento nella section
-    document.querySelector("#bio").append(container);
-    document.querySelector("#container-biotiext").append(question);
-    document.querySelector("#container-biotiext").append(bioText);
+    document.querySelector("#container-Biography").querySelector(".main-question").after(bio);
+
 }
