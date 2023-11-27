@@ -39,40 +39,6 @@ h2{
 
 /*Bio*/
 
-#bio{
-  display: flex;
-  justify-content: flex-start;
-}
-
-#avatar{
-  width: 300px;
-  height: 300px;
-  margin-right: 40px;
-  border-radius: 150px;
-  border-bottom: 15px solid #c0c2ce;
-  border-right: 7.5px solid #c0c2ce;
-}
-
-#social{
-  display: flex;
-  justify-content: center;
-}
-
-.social-icon{
-  width: 25px;
-  margin: 30px 50px 20px 0px;
-  transition: opacity 0.15s;
-}
-
-.social-icon:hover{
-  opacity: 0.5;
-}
-
-.social-icon:active{
-  opacity: 1;
-}
-
-
 /*Skills*/
 
 #skill-list{

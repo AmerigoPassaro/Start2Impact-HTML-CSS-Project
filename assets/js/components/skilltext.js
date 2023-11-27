@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", skillText);
 function skillText(){
 
     // Creazione bio
-    let question = document.createElement("p");
+
     let skillText = document.createElement("p");
     let skillIntro = document.createElement("p");
     let listSkill = document.createElement("ul");
     // Inserimento attributo
-    question.setAttribute("class", "main-question");
+
     skillText.setAttribute("id", "container-skills");
     skillIntro.setAttribute("id", "skill-intro");
     listSkill.setAttribute("id", "skill-list");

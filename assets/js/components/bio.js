@@ -17,5 +17,3 @@ function bio(){
     document.querySelector("#bio").append(textContainer);
 
 }
-
-
