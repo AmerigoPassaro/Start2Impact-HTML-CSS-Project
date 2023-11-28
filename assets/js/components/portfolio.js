@@ -13,15 +13,35 @@ let project = {
       page: "https://www.amerigopassaro.it/"
     },
     { 
-      namePorject: "AmerigoPassaro",
-      subtitle: "My personal website",
-      preview: "assets/img/projects/amerigopassaro.jpg",
-      description: `Quello su cui state navigando &egrave; il mio primo progetto presente sul mio portfolio.<br>
-      Esso contiene tutte le informazioni su di me e sui miei lavori.<br>
+      namePorject: "MyCounter",
+      subtitle: "A simple counter",
+      preview: "assets/img/projects/mycounter.jpg",
+      description: `Lavorando con le basi del JavaScript ho prodotto questo nuovo progetto, sullo stesso stile del primo.<br>
+      Esso si fonda sulla semplice struttura di un contatore.<br>
       Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.`,
-      repository: "https://github.com/AmerigoPassaro/Start2Impact-HTML-CSS-Project",
-      page: "https://www.amerigopassaro.it/"
-    }
+      repository: "https://github.com/AmerigoPassaro/Start2Impact-Basic-Javascript-Project",
+      page: "https://www.amerigopassaro.it/projects/mycounter/"
+    },
+    { 
+      namePorject: "Library",
+      subtitle: "What you want to read",
+      preview: "assets/img/projects/library.jpg",
+      description: `Con un JavaScript pi&ugrave; complesso, ho prodotto questo secondo progetto assai interessante.<br>
+      Un modo per ottenere di consigli alla lettura, inserendo solo il genere.<br>
+      Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.`,
+      repository: "https://github.com/AmerigoPassaro/Start2Impact-Advanced-Javascript-Project",
+      page: "https://www.amerigopassaro.it/projects/library/"
+    },
+    { 
+      namePorject: "Meditation Time",
+      subtitle: "The time for you",
+      preview: "assets/img/projects/meditationtime.jpg",
+      description: `  Tramite l'utilizzo della liberia React, mi sono dilettato nella produzione di un timer.<br>
+      Tutti abbiamo bisogno di un po' di tempo per noi stessi e per meditare.<br>
+      Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.`,
+      repository: "https://github.com/AmerigoPassaro/Start2Impact-React-Project",
+      page: "https://amerigopassaro.github.io/Start2Impact-React-Project/"
+    },
   ]   
 
 }
@@ -45,10 +65,36 @@ function portfolio(){
     for(let i = 0; i < Object.keys(project.porjectInfo).length; i++){
       // Creazione voce del menu
       let boxProject = document.createElement("div");
+      let titleP = document.createElement("h3");
+      let subP = document.createElement("h4");
+      let prevP = document.createElement("img");
+      let desP = document.createElement("p");
+      let repoP = document.createElement("a");
+      let pageP = document.createElement("a");
       // Inserimento attributi
       boxProject.setAttribute("class", "project-box");
+      prevP.setAttribute("class", "project-picutre");
+      prevP.setAttribute("src", project.porjectInfo[i].preview);
+      desP.setAttribute("class", "project-description");
+      repoP.setAttribute("class", "project-link");
+      repoP.setAttribute("href", project.porjectInfo[i].repository);
+      pageP.setAttribute("class", "project-link");
+      pageP.setAttribute("href", project.porjectInfo[i].page);
+      // Inserimento valore
+      titleP.innerHTML = project.porjectInfo[i].namePorject;
+      subP.innerHTML = project.porjectInfo[i].subtitle;
+      desP.innerHTML = project.porjectInfo[i].description;
+      repoP.innerHTML = "repository";
+      pageP.innerHTML = "link al progetto";
       // Inserimento nel nav
       document.querySelector("#projects-container").append(boxProject);
+      document.querySelectorAll(".project-box")[i].append(titleP);
+      document.querySelectorAll("h3")[i].after(subP);
+      document.querySelectorAll("h4")[i].after(prevP);
+      document.querySelectorAll(".project-box")[i].querySelector("img").after(desP);
+      document.querySelectorAll(".project-description")[i].after(repoP);
+      document.querySelectorAll(".project-description")[i].after(pageP);
+
   }
 
 }
@@ -56,57 +102,13 @@ function portfolio(){
 {/* <section id="section-port">
 
 
-              <div class="project-box">
-                <h3>AmerigoPassaro</h3>
-                <h4>My personal website</h4>
-                <img class="project-picutre" src="assets/img/projects/amerigopassaro.jpg">
-                <p class="project-description">
-                  Quello su cui state navigando &egrave; il mio primo progetto presente sul mio portfolio.<br>
-                  Esso contiene tutte le informazioni su di me e sui miei lavori.<br>
-                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
-                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-HTML-CSS-Project">Repository GitHub</a>
-                  <a class="project-link" href="https://www.amerigopassaro.it/">Link al progetto</a>
-                </p>
-              </div>
 
-              <div class="project-box">
-                <h3>MyCounter</h3>
-                <h4>A simple counter</h4>
-                <img class="project-picutre" src="assets/img/projects/mycounter.jpg">
-                <p class="project-description">
-                  Lavorando con le basi del JavaScript ho prodotto questo nuovo progetto, sullo stesso stile del primo.<br>
-                  Esso si fonda sulla semplice struttura di un contatore.<br>
-                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
-                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-Basic-Javascript-Project">Repository GitHub</a>
-                  <a class="project-link" href="https://www.amerigopassaro.it/projects/mycounter/">Link al progetto</a>
-                </p>
-              </div>
 
-              <div class="project-box">
-                <h3>Library</h3>
-                <h4>What you want to read</h4>
-                <img class="project-picutre" src="assets/img/projects/library.jpg">
-                <p class="project-description">
-                  Con un JavaScript pi&ugrave; complesso, ho prodotto questo secondo progetto assai interessante.<br>
-                  Un modo per ottenere di consigli alla lettura, inserendo solo il genere.<br>
-                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
-                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-Advanced-Javascript-Project">Repository GitHub</a>
-                  <a class="project-link" href="https://www.amerigopassaro.it/projects/library/">Link al progetto</a>
-                </p>
-              </div>
 
-              <div class="project-box">
-                <h3>Meditation Time</h3>
-                <h4>The time for you</h4>
-                <img class="project-picutre" src="assets/img/projects/meditationtime.jpg">
-                <p class="project-description">
-                  Tramite l'utilizzo della liberia React, mi sono dilettato nella produzione di un timer.<br>
-                  Tutti abbiamo bisogno di un po' di tempo per noi stessi e per meditare.<br>
-                  Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.
-                  <a class="project-link" href="https://github.com/AmerigoPassaro/Start2Impact-React-Project">Repository GitHub</a>
-                  <a class="project-link" href="https://amerigopassaro.github.io/Start2Impact-React-Project/">Link al progetto</a>
-                </p>
-              </div>
+
+
+
+
 
 
             </div>
