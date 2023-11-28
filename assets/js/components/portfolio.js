@@ -1,34 +1,60 @@
+// Liste di elementi
+let project = {
+  porjectInfo :
+  [
+    { 
+      namePorject: "AmerigoPassaro",
+      subtitle: "My personal website",
+      preview: "assets/img/projects/amerigopassaro.jpg",
+      description: `Quello su cui state navigando &egrave; il mio primo progetto presente sul mio portfolio.<br>
+      Esso contiene tutte le informazioni su di me e sui miei lavori.<br>
+      Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.`,
+      repository: "https://github.com/AmerigoPassaro/Start2Impact-HTML-CSS-Project",
+      page: "https://www.amerigopassaro.it/"
+    },
+    { 
+      namePorject: "AmerigoPassaro",
+      subtitle: "My personal website",
+      preview: "assets/img/projects/amerigopassaro.jpg",
+      description: `Quello su cui state navigando &egrave; il mio primo progetto presente sul mio portfolio.<br>
+      Esso contiene tutte le informazioni su di me e sui miei lavori.<br>
+      Se desiderate vedere il codice trovate tutto sul mio profilo GitHub.`,
+      repository: "https://github.com/AmerigoPassaro/Start2Impact-HTML-CSS-Project",
+      page: "https://www.amerigopassaro.it/"
+    }
+  ]   
+
+}
+
 // Avvio creazione
 document.addEventListener("DOMContentLoaded", portfolio);
 
 function portfolio(){
 
     // Creazione portfolio
-    let portfolio = document.createElement("article");
-
+    let portfolio = document.createElement("p");
+    let projCont = document.createElement("div")
     // Inserimento attributo
     portfolio.setAttribute("id", "portfolio");
-
-
-    question.innerHTML = "Vi mostro qualcosa?";
+    projCont.setAttribute("id", "projects-container");
+    // Inserimento contneuto
+    portfolio.innerHTML = "Dopo essermi presentato ed avervi detto cosa so fare, ecco qualche dimostrazione."    
     // Inserimento nella section
-    document.querySelector("#PersonalPortfolio").querySelector("h2").after(portfolio);
-    // document.querySelector("#container-biotiext").append(question);
+    document.querySelector("#container-PersonalPortfolio").querySelector(".main-question").after(portfolio);
+    document.querySelector("#portfolio").after(projCont);
+    for(let i = 0; i < Object.keys(project.porjectInfo).length; i++){
+      // Creazione voce del menu
+      let boxProject = document.createElement("div");
+      // Inserimento attributi
+      boxProject.setAttribute("class", "project-box");
+      // Inserimento nel nav
+      document.querySelector("#projects-container").append(boxProject);
+  }
 
 }
 
 {/* <section id="section-port">
-        <h2>
-          Personal<b>Portfolio</b>
-        </h2>
-        <article id="port">
-          <p class="main-question">
-            Vi mostro qualcosa?
-          </p>
-          <p class="main-text">
-            Dopo essermi presentato ed avervi detto cosa so fare, ecco qualche dimostrazione.<br>
 
-            <div id="projects-container">
 
               <div class="project-box">
                 <h3>AmerigoPassaro</h3>
