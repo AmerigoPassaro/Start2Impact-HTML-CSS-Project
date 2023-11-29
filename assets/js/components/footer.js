@@ -1,6 +1,3 @@
-// Liste di elementi
-let copy = "Amerigo Passaro &copy";
-
 // Avvio creazione
 document.addEventListener("DOMContentLoaded", footer);
 

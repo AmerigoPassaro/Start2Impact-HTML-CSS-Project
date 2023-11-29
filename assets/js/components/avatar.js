@@ -1,7 +1,3 @@
-let socials = ["https://www.instagram.com/amerigo_passaro/", "https://www.linkedin.com/in/amerigo-passaro-280162152/", "https://github.com/AmerigoPassaro"]
-let iconS = ["assets/img/social/ig.svg", "assets/img/social/in.svg", "assets/img/social/git.svg"]
-
-
 // Avvio creazione
 document.addEventListener("DOMContentLoaded", avatar);
 

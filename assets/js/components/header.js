@@ -1,8 +1,3 @@
-// Liste di elementi
-let brand = "<b>Amerigo</b>Passaro";
-let menuItem = ["Home", "Contacts"];
-let menuFunc = ["goToHome()", "goToContacts()"];
-
 // Avvio creazione
 document.addEventListener("DOMContentLoaded", header);
 

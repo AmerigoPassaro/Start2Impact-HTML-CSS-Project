@@ -1,6 +1,3 @@
-let sections = ["Biography", "DevelopmentSkills", "PersonalPortfolio"]
-let questions = ["Chi sono?", "Cosa so fare?", "Vi mostro qualcosa?"]
-
 // Avvio creazione
 document.addEventListener("DOMContentLoaded", section);
 
