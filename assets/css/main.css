@@ -1,10 +1,10 @@
 main{
   min-height: 700px;
   padding: 20px 40px;
-  background-color: #e5e6eb;
-  background-image: url('../img/bg.png');
+  background-color: #131318;
   background-repeat: repeat-y;
   background-position: right;
+  color: #ffffff;
 }
 
 h1{

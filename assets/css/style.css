@@ -35,3 +35,16 @@ strong:hover{
 strong:active{
   opacity: 1;
 }
+
+button{
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+button:active{
+  opacity: 1;
+}

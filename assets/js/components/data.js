@@ -1,3 +1,9 @@
+// Header
+let brand = "<b>Amerigo</b>Passaro";
+let menuItem = ["Home", "Contacts", "Mode"];
+let menuFunc = ["goToHome()", "goToContacts()", "changeMode()"];
+
+
 let socials = ["https://www.instagram.com/amerigo_passaro/", "https://www.linkedin.com/in/amerigo-passaro-280162152/", "https://github.com/AmerigoPassaro"];
 let iconS = ["assets/img/social/ig.svg", "assets/img/social/in.svg", "assets/img/social/git.svg"];
 
@@ -8,9 +14,8 @@ Per questo ho intrapreso nel 2022 il percorso di sviluppo frontend presso <stron
 
 let copy = "Amerigo Passaro &copy";
 
-let brand = "<b>Amerigo</b>Passaro";
-let menuItem = ["Home", "Contacts"];
-let menuFunc = ["goToHome()", "goToContacts()"];
+
+
 let sections = ["Biography", "DevelopmentSkills", "PersonalPortfolio"];
 let questions = ["Chi sono?", "Cosa so fare?", "Vi mostro qualcosa?"];
 let skills = ["html", "css", "javascript", "react"];
