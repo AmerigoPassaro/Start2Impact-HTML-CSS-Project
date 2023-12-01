@@ -24,6 +24,15 @@ h2{
   font-size: 25px;
 }
 
+.main-text {
+  width: 580px;
+  padding: 30px 30px;
+  border: 1px solid #4c5265;
+  border-radius: 30px;
+
+  background-color: #212129;
+}
+
 /* h1{
   margin: 30px 0px 40px 0px;
   font-size: 30px;
@@ -34,14 +43,7 @@ h2{
 
 
 
-.main-text{
-  width: 580px;
-  padding: 30px 30px;
-  border: 1px solid #4c5265;
-  border-radius: 30px;
 
-  background-color: #212129;
-}
 
 #port .main-text{
   width: 990px;

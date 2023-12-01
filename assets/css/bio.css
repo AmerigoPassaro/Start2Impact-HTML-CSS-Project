@@ -8,19 +8,24 @@
     height: 300px;
     margin-right: 40px;
     border-radius: 150px;
-    border-bottom: 15px solid #c0c2ce;
-    border-right: 7.5px solid #c0c2ce;
+    /* border: 3px solid #4c5265; */
   }
   
   #social{
     display: flex;
     justify-content: center;
+
+    border: 1px solid #4c5265;
+    border-radius: 30px;
+  
+    background-color: #212129;
   }
   
   .social-icon{
     width: 25px;
     margin: 30px 50px 20px 0px;
     transition: opacity 0.15s;
+    filter: brightness(000%) invert(100%) ;
   }
   
   .social-icon:hover{
