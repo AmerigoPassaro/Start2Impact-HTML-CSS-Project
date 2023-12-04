@@ -9,11 +9,10 @@
   }
 
   #avatar{
-    width: 100%;
+    width: inherit;
     height: 300px;
     margin-right: 40px;
     border-radius: 150px;
-    /* border: 3px solid #4c5265; */
   }
   
   #social{
@@ -31,7 +30,7 @@
     margin: 20px 25px;
 
     transition: opacity 0.15s;
-    filter: brightness(000%) invert(100%) ;
+    filter: brightness(000%) invert(100%);
   }
   
   .social-icon:hover{

@@ -13,7 +13,7 @@ h2, .main-question{
 }
 
 h2{
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 10px 0px;
   font-size: 30px;
 }
 
@@ -31,6 +31,8 @@ h2{
   border-radius: 30px;
 
   background-color: #212129;
+
+  font-weight: 100;
 }
 
 /* h1{
@@ -51,38 +53,7 @@ h2{
 
 /*Skills*/
 
-#skill-list{
-  padding: 0px;
-}
 
-#contact-submit, .skill-item, .project-link{
-  display: inline-block;
-  margin: 40px 20px 40px 0px;
-  padding: 20px 30px;
-  border-radius: 20px;
-  background-color: #c0c2ce;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 20px;
-  transition: font-weight 0.15s;
-  transition: opacity 0.15s;
-  cursor: pointer;
-}
-
-.project-link{
-  margin: 15px 0px;
-  background-color: #e5e6eb;
-}
-
-#contact-submit:hover, .skill-item:hover, .project-link:hover{
-  opacity: 0.5;
-  font-weight: 700;
-}
-
-#contact-submit:active, .skill-item:active, .project-link:active{
-  opacity: 1;
-  font-weight: 400;
-}
 
 /*Contacts*/
 
