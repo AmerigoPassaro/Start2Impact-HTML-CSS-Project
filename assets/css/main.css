@@ -7,6 +7,10 @@ main{
   color: #ffffff;
 }
 
+section{
+  margin-bottom: 50px;
+}
+
 h2, .main-question{
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -25,12 +29,12 @@ h2{
 }
 
 .main-text {
-  width: 580px;
-  padding: 30px 30px;
-  border: 1px solid #4c5265;
-  border-radius: 30px;
+  width: 100%;
+  padding: 0px 30px;
+  /* border: 1px solid #4c5265;
+  border-radius: 30px; */
 
-  background-color: #212129;
+  /* background-color: #212129; */
 
   font-weight: 100;
 }

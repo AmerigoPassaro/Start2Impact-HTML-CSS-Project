@@ -1,6 +1,8 @@
 #container-Biography{
     display: flex;
     justify-content: flex-start;
+
+    padding: 0px 40px;
   }
 
   #avatar-container{
@@ -39,4 +41,23 @@
   
   .social-icon:active{
     opacity: 1;
+  }
+
+  .nav-section-item{
+    display: inline;
+    margin: 50px 20px 0px 0px;
+    padding: 10px 15px;
+    
+    border: 1px solid #4c5265;
+    border-radius: 30px;
+  
+    background-color: #212129;    
+
+    text-transform: uppercase;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    transition: font-weight 0.15s;
+    transition: opacity 0.15s;
+    cursor: pointer;
   }
