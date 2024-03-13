@@ -1,63 +1,106 @@
 main{
-  min-height: 700px;
   padding: 20px 40px;
-  background-color: #131318;
+  background-color: #e5e6eb;
+  background-image: url('../img/bg.png');
   background-repeat: repeat-y;
   background-position: right;
-  color: #ffffff;
 }
 
-section{
-  margin-bottom: 50px;
-}
-
-h2, .main-question{
-  font-weight: 500;
-  letter-spacing: 0.15em;
-}
-
-h2{
-  margin: 0px 0px 10px 0px;
-  font-size: 30px;
-}
-
-.main-question{
-  padding-left: 30px;
-
-  color: #c0c2ce;
-  font-size: 25px;
-}
-
-.main-text {
-  width: 100%;
-  padding: 0px 30px;
-  /* border: 1px solid #4c5265;
-  border-radius: 30px; */
-
-  /* background-color: #212129; */
-
-  font-weight: 100;
-}
-
-/* h1{
+h1{
   margin: 30px 0px 40px 0px;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.1em;
   color: #c0c2ce;
-} */
+}
 
+h2{
+  margin: 10px 0px 30px 0px;
+  font-size: 27px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
 
+.main-question{
+  color: #c0c2ce;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
 
-
+.main-text{
+  width: 650px;
+}
 
 #port .main-text{
   width: 990px;
 }
 
+/*Bio*/
+
+#bio{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#avatar{
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  border-radius: 150px;
+  border-bottom: 15px solid #c0c2ce;
+  border-right: 7.5px solid #c0c2ce;
+}
+
+#social{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  width: 25px;
+  margin: 30px 50px 20px 0px;
+  transition: opacity 0.15s;
+}
+
+.social-icon:hover{
+  opacity: 0.5;
+}
+
+.social-icon:active{
+  opacity: 1;
+}
+
+
 /*Skills*/
 
+#skill-list{
+  padding: 0px;
+}
 
+#contact-submit, .skill-item{
+  display: inline-block;
+  margin: 40px 20px 40px 0px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #c0c2ce;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 20px;
+  transition: font-weight 0.15s;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+#contact-submit:hover, .skill-item:hover{
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+#contact-submit:active, .skill-item:active{
+  opacity: 1;
+  font-weight: 400;
+}
 
 /*Contacts*/
 
@@ -84,4 +127,3 @@ textarea.contacts-input{
   margin: 20px 20px 40px 0px;
   border: 0px;
 }
-

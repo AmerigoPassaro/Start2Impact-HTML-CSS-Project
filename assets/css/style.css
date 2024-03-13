@@ -1,7 +1,6 @@
 *{
   margin: 0px;
   font-family: 'Roboto', sans-serif;
-  line-height: 2em;
 }
 
 footer{
@@ -15,7 +14,7 @@ footer{
 p{
   margin-bottom: 10px;
   letter-spacing: 0.05em;
-
+  line-height: 2em;
 }
 
 a{
@@ -24,7 +23,6 @@ a{
 }
 
 strong{
-  font-weight: 400;
   cursor: pointer;
   transition: opacity 0.15s;
 }
@@ -34,18 +32,5 @@ strong:hover{
 }
 
 strong:active{
-  opacity: 1;
-}
-
-button{
-  transition: opacity 0.15s;
-  cursor: pointer;
-}
-
-button:hover{
-  opacity: 0.5;
-}
-
-button:active{
   opacity: 1;
 }
